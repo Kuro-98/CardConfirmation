@@ -1,0 +1,123 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+
+.contenedor {
+  background-color: #1c56a8;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+
+.contenedor .contenido {
+  width: 600px;
+  border-radius: 10px;
+  background-color: white;
+  padding: 10px 20px;
+  box-shadow: 0px 5px 10px rgba(120, 228, 247, 0.5);
+}
+
+.contenedor .contenido .info {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 20px;
+  flex: auto;
+}
+
+.contenedor .info .logo {
+  width: 48px;
+  margin-right: 10px;
+}
+
+
+.contenedor .info .textos .title {
+  font-weight: bolder;
+}
+
+.contenedor .acciones {
+  padding: 10px 0;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+.contenedor .acciones .btn {
+  border: none;
+  padding: 15px;
+  min-width: 120px;
+  border-radius: 5px;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+
+.contenedor .acciones .descargar {
+  background: #008EDF;
+  border: none;
+  color: #fff;
+}
+
+.contenedor .acciones .descargar:hover {
+  background-color: #0280DE;
+
+}
+
+.contenedor .acciones .volver {
+  background: #fff;
+  color: #000;
+  border: 1px solid rgba(221, 221, 221, .8);
+}
+
+.contenedor .acciones .volver:hover {
+  background-color: #eee;
+}
+
+
+
+@media (max-width:600px) {
+  .contenedor .sub-contenedor {
+    width: 80%;
+  }
+
+  .contenedor .sub-contenedor .actions {
+    flex-direction: column;
+  }
+
+}
+
+@media screen and (max-width: 680px) {
+
+  .contenedor .contenido {
+    margin: 20px
+  }
+
+  .contenedor .acciones {
+    flex-direction: column;
+  }
+
+  .contenedor .acciones .btn {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 548px) {
+
+  .contenedor {
+    height: 100%;
+    position: fixed;
+  }
+
+
+}
